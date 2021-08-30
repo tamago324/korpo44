@@ -1,0 +1,1364 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L foostan_kbd_lib:ProMicro U1
+U 1 1 61172A74
+P 2400 2050
+F 0 "U1" H 2400 2887 60  0000 C CNN
+F 1 "ProMicro" H 2400 2781 60  0000 C CNN
+F 2 "kbd:ProMicro_v2" H 2500 1000 60  0001 C CNN
+F 3 "" H 2500 1000 60  0000 C CNN
+	1    2400 2050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3100 1500
+NoConn ~ 1700 1900
+NoConn ~ 1700 2000
+NoConn ~ 1700 2500
+NoConn ~ 1700 2600
+NoConn ~ 3100 2600
+NoConn ~ 3100 2500
+Text GLabel 1700 1600 0    50   Input ~ 0
+data
+Text GLabel 1700 2100 0    50   Input ~ 0
+row0
+Text GLabel 1700 2200 0    50   Input ~ 0
+row1
+Text GLabel 1700 2300 0    50   Input ~ 0
+row2
+Text GLabel 1700 2400 0    50   Input ~ 0
+row3
+Text GLabel 3100 1700 2    50   Input ~ 0
+reset
+Text GLabel 3100 1900 2    50   Input ~ 0
+col0
+Text GLabel 3100 2000 2    50   Input ~ 0
+col1
+Text GLabel 3100 2100 2    50   Input ~ 0
+col2
+Text GLabel 3100 2200 2    50   Input ~ 0
+col3
+Text GLabel 3100 2300 2    50   Input ~ 0
+col4
+Text GLabel 3100 2400 2    50   Input ~ 0
+col5
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 61173C1A
+P 1300 1000
+F 0 "#FLG02" H 1300 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 1173 50  0000 C CNN
+F 2 "" H 1300 1000 50  0001 C CNN
+F 3 "~" H 1300 1000 50  0001 C CNN
+	1    1300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6117427E
+P 1300 1000
+F 0 "#PWR03" H 1300 750 50  0001 C CNN
+F 1 "GND" H 1305 827 50  0000 C CNN
+F 2 "" H 1300 1000 50  0001 C CNN
+F 3 "" H 1300 1000 50  0001 C CNN
+	1    1300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 61174441
+P 850 1000
+F 0 "#FLG01" H 850 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 850 1173 50  0000 C CNN
+F 2 "" H 850 1000 50  0001 C CNN
+F 3 "~" H 850 1000 50  0001 C CNN
+	1    850  1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 61174ADC
+P 850 1000
+F 0 "#PWR01" H 850 850 50  0001 C CNN
+F 1 "VCC" H 865 1173 50  0000 C CNN
+F 2 "" H 850 1000 50  0001 C CNN
+F 3 "" H 850 1000 50  0001 C CNN
+	1    850  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 6117516E
+P 1000 1900
+F 0 "#PWR02" H 1000 1650 50  0001 C CNN
+F 1 "GND" H 1005 1727 50  0000 C CNN
+F 2 "" H 1000 1900 50  0001 C CNN
+F 3 "" H 1000 1900 50  0001 C CNN
+	1    1000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 611752B4
+P 3900 1700
+F 0 "#PWR08" H 3900 1450 50  0001 C CNN
+F 1 "GND" H 3905 1527 50  0000 C CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR07
+U 1 1 611755C0
+P 3600 1500
+F 0 "#PWR07" H 3600 1350 50  0001 C CNN
+F 1 "VCC" H 3615 1673 50  0000 C CNN
+F 2 "" H 3600 1500 50  0001 C CNN
+F 3 "" H 3600 1500 50  0001 C CNN
+	1    3600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1700 1000 1700
+Wire Wire Line
+	1000 1700 1000 1800
+Wire Wire Line
+	1700 1800 1000 1800
+Connection ~ 1000 1800
+Wire Wire Line
+	1000 1800 1000 1900
+Wire Wire Line
+	3100 1600 3900 1600
+Wire Wire Line
+	3900 1600 3900 1700
+Wire Wire Line
+	3100 1800 3600 1800
+Wire Wire Line
+	3600 1500 3600 1800
+$Comp
+L foostan_kbd_lib:SW_PUSH RESET_SW1
+U 1 1 611785DD
+P 1650 3150
+F 0 "RESET_SW1" H 1650 3405 50  0000 C CNN
+F 1 "SW_PUSH" H 1650 3314 50  0000 C CNN
+F 2 "kbd:ResetSW" H 1650 3150 50  0001 C CNN
+F 3 "" H 1650 3150 50  0000 C CNN
+	1    1650 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 3150 0    50   Input ~ 0
+reset
+$Comp
+L power:GND #PWR04
+U 1 1 61178C0A
+P 1950 3150
+F 0 "#PWR04" H 1950 2900 50  0001 C CNN
+F 1 "GND" H 1955 2977 50  0000 C CNN
+F 2 "" H 1950 3150 50  0001 C CNN
+F 3 "" H 1950 3150 50  0001 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L foostan_kbd_lib:MJ-4PP-9 J1
+U 1 1 61179B14
+P 2850 3300
+F 0 "J1" H 2881 3576 50  0000 C CNN
+F 1 "MJ-4PP-9" H 2881 3485 50  0000 C CNN
+F 2 "kbd:MJ-4PP-9" H 3125 3475 50  0001 C CNN
+F 3 "~" H 3125 3475 50  0001 C CNN
+	1    2850 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3050 3225
+$Comp
+L power:VCC #PWR05
+U 1 1 61179F14
+P 3275 3075
+F 0 "#PWR05" H 3275 2925 50  0001 C CNN
+F 1 "VCC" H 3290 3248 50  0000 C CNN
+F 2 "" H 3275 3075 50  0001 C CNN
+F 3 "" H 3275 3075 50  0001 C CNN
+	1    3275 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6117A301
+P 3275 3450
+F 0 "#PWR06" H 3275 3200 50  0001 C CNN
+F 1 "GND" H 3280 3277 50  0000 C CNN
+F 2 "" H 3275 3450 50  0001 C CNN
+F 3 "" H 3275 3450 50  0001 C CNN
+	1    3275 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3275 3075 3275 3275
+Wire Wire Line
+	3275 3275 3050 3275
+Wire Wire Line
+	3050 3375 3275 3375
+Wire Wire Line
+	3275 3375 3275 3450
+Wire Wire Line
+	3050 3325 3450 3325
+Text GLabel 3450 3325 2    50   Input ~ 0
+data
+$Comp
+L foostan_kbd_lib:SW_PUSH SW1
+U 1 1 6118DDDC
+P 5400 1400
+F 0 "SW1" H 5400 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 5400 1564 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 5400 1400 50  0001 C CNN
+F 3 "" H 5400 1400 50  0000 C CNN
+	1    5400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 6118EC3D
+P 5700 1550
+F 0 "D1" V 5746 1470 50  0000 R CNN
+F 1 "1N4148" V 5655 1470 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 5700 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5700 1550 50  0001 C CNN
+	1    5700 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW4
+U 1 1 61190108
+P 6500 1400
+F 0 "SW4" H 6500 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 6500 1564 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 6500 1400 50  0001 C CNN
+F 3 "" H 6500 1400 50  0000 C CNN
+	1    6500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 6119010E
+P 6800 1550
+F 0 "D4" V 6846 1470 50  0000 R CNN
+F 1 "1N4148" V 6755 1470 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 6800 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6800 1550 50  0001 C CNN
+	1    6800 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW7
+U 1 1 61190C6D
+P 7600 1400
+F 0 "SW7" H 7600 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 7600 1564 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 7600 1400 50  0001 C CNN
+F 3 "" H 7600 1400 50  0000 C CNN
+	1    7600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D7
+U 1 1 61190C73
+P 7900 1550
+F 0 "D7" V 7946 1470 50  0000 R CNN
+F 1 "1N4148" V 7855 1470 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 7900 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7900 1550 50  0001 C CNN
+	1    7900 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW11
+U 1 1 611910CA
+P 8700 1400
+F 0 "SW11" H 8700 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 8700 1564 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 8700 1400 50  0001 C CNN
+F 3 "" H 8700 1400 50  0000 C CNN
+	1    8700 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D11
+U 1 1 611910D0
+P 9000 1550
+F 0 "D11" V 9046 1470 50  0000 R CNN
+F 1 "1N4148" V 8955 1470 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 9000 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9000 1550 50  0001 C CNN
+	1    9000 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW15
+U 1 1 61192447
+P 9800 1400
+F 0 "SW15" H 9800 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 9800 1564 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 9800 1400 50  0001 C CNN
+F 3 "" H 9800 1400 50  0000 C CNN
+	1    9800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D15
+U 1 1 6119244D
+P 10100 1550
+F 0 "D15" V 10146 1470 50  0000 R CNN
+F 1 "1N4148" V 10055 1470 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 10100 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10100 1550 50  0001 C CNN
+	1    10100 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW19
+U 1 1 611930E6
+P 10900 1400
+F 0 "SW19" H 10900 1655 50  0000 C CNN
+F 1 "SW_PUSH" H 10900 1564 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 10900 1400 50  0001 C CNN
+F 3 "" H 10900 1400 50  0000 C CNN
+	1    10900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D19
+U 1 1 611930EC
+P 11200 1550
+F 0 "D19" V 11246 1470 50  0000 R CNN
+F 1 "1N4148" V 11155 1470 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 11200 1375 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11200 1550 50  0001 C CNN
+	1    11200 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW2
+U 1 1 611A060F
+P 5400 2200
+F 0 "SW2" H 5400 2455 50  0000 C CNN
+F 1 "SW_PUSH" H 5400 2364 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 5400 2200 50  0001 C CNN
+F 3 "" H 5400 2200 50  0000 C CNN
+	1    5400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 611A0615
+P 5700 2350
+F 0 "D2" V 5746 2270 50  0000 R CNN
+F 1 "1N4148" V 5655 2270 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 5700 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW5
+U 1 1 611A061B
+P 6500 2200
+F 0 "SW5" H 6500 2455 50  0000 C CNN
+F 1 "SW_PUSH" H 6500 2364 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 6500 2200 50  0001 C CNN
+F 3 "" H 6500 2200 50  0000 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D5
+U 1 1 611A0621
+P 6800 2350
+F 0 "D5" V 6846 2270 50  0000 R CNN
+F 1 "1N4148" V 6755 2270 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 6800 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6800 2350 50  0001 C CNN
+	1    6800 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW8
+U 1 1 611A0627
+P 7600 2200
+F 0 "SW8" H 7600 2455 50  0000 C CNN
+F 1 "SW_PUSH" H 7600 2364 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 7600 2200 50  0001 C CNN
+F 3 "" H 7600 2200 50  0000 C CNN
+	1    7600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D8
+U 1 1 611A062D
+P 7900 2350
+F 0 "D8" V 7946 2270 50  0000 R CNN
+F 1 "1N4148" V 7855 2270 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 7900 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7900 2350 50  0001 C CNN
+	1    7900 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW12
+U 1 1 611A0633
+P 8700 2200
+F 0 "SW12" H 8700 2455 50  0000 C CNN
+F 1 "SW_PUSH" H 8700 2364 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 8700 2200 50  0001 C CNN
+F 3 "" H 8700 2200 50  0000 C CNN
+	1    8700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D12
+U 1 1 611A0639
+P 9000 2350
+F 0 "D12" V 9046 2270 50  0000 R CNN
+F 1 "1N4148" V 8955 2270 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 9000 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9000 2350 50  0001 C CNN
+	1    9000 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW16
+U 1 1 611A063F
+P 9800 2200
+F 0 "SW16" H 9800 2455 50  0000 C CNN
+F 1 "SW_PUSH" H 9800 2364 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 9800 2200 50  0001 C CNN
+F 3 "" H 9800 2200 50  0000 C CNN
+	1    9800 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D16
+U 1 1 611A0645
+P 10100 2350
+F 0 "D16" V 10146 2270 50  0000 R CNN
+F 1 "1N4148" V 10055 2270 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 10100 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10100 2350 50  0001 C CNN
+	1    10100 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW20
+U 1 1 611A064B
+P 10900 2200
+F 0 "SW20" H 10900 2455 50  0000 C CNN
+F 1 "SW_PUSH" H 10900 2364 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 10900 2200 50  0001 C CNN
+F 3 "" H 10900 2200 50  0000 C CNN
+	1    10900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D20
+U 1 1 611A0651
+P 11200 2350
+F 0 "D20" V 11246 2270 50  0000 R CNN
+F 1 "1N4148" V 11155 2270 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 11200 2175 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11200 2350 50  0001 C CNN
+	1    11200 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW3
+U 1 1 611A7F34
+P 5400 3100
+F 0 "SW3" H 5400 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 5400 3264 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 5400 3100 50  0001 C CNN
+F 3 "" H 5400 3100 50  0000 C CNN
+	1    5400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 611A7F3A
+P 5700 3250
+F 0 "D3" V 5746 3170 50  0000 R CNN
+F 1 "1N4148" V 5655 3170 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 5700 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5700 3250 50  0001 C CNN
+	1    5700 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW6
+U 1 1 611A7F40
+P 6500 3100
+F 0 "SW6" H 6500 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 6500 3264 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 6500 3100 50  0001 C CNN
+F 3 "" H 6500 3100 50  0000 C CNN
+	1    6500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D6
+U 1 1 611A7F46
+P 6800 3250
+F 0 "D6" V 6846 3170 50  0000 R CNN
+F 1 "1N4148" V 6755 3170 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 6800 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6800 3250 50  0001 C CNN
+	1    6800 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW9
+U 1 1 611A7F4C
+P 7600 3100
+F 0 "SW9" H 7600 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 7600 3264 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 7600 3100 50  0001 C CNN
+F 3 "" H 7600 3100 50  0000 C CNN
+	1    7600 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D9
+U 1 1 611A7F52
+P 7900 3250
+F 0 "D9" V 7946 3170 50  0000 R CNN
+F 1 "1N4148" V 7855 3170 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 7900 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7900 3250 50  0001 C CNN
+	1    7900 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW13
+U 1 1 611A7F58
+P 8700 3100
+F 0 "SW13" H 8700 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 8700 3264 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 8700 3100 50  0001 C CNN
+F 3 "" H 8700 3100 50  0000 C CNN
+	1    8700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D13
+U 1 1 611A7F5E
+P 9000 3250
+F 0 "D13" V 9046 3170 50  0000 R CNN
+F 1 "1N4148" V 8955 3170 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 9000 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9000 3250 50  0001 C CNN
+	1    9000 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW17
+U 1 1 611A7F64
+P 9800 3100
+F 0 "SW17" H 9800 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 9800 3264 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 9800 3100 50  0001 C CNN
+F 3 "" H 9800 3100 50  0000 C CNN
+	1    9800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D17
+U 1 1 611A7F6A
+P 10100 3250
+F 0 "D17" V 10146 3170 50  0000 R CNN
+F 1 "1N4148" V 10055 3170 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 10100 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10100 3250 50  0001 C CNN
+	1    10100 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW21
+U 1 1 611A7F70
+P 10900 3100
+F 0 "SW21" H 10900 3355 50  0000 C CNN
+F 1 "SW_PUSH" H 10900 3264 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 10900 3100 50  0001 C CNN
+F 3 "" H 10900 3100 50  0000 C CNN
+	1    10900 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D21
+U 1 1 611A7F76
+P 11200 3250
+F 0 "D21" V 11246 3170 50  0000 R CNN
+F 1 "1N4148" V 11155 3170 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 11200 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11200 3250 50  0001 C CNN
+	1    11200 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW10
+U 1 1 611AF38B
+P 7600 3900
+F 0 "SW10" H 7600 4155 50  0000 C CNN
+F 1 "SW_PUSH" H 7600 4064 50  0000 C CNN
+F 2 "korpo44:CherryMX_MidHeight_Hotswap_1.25u" H 7600 3900 50  0001 C CNN
+F 3 "" H 7600 3900 50  0000 C CNN
+	1    7600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D10
+U 1 1 611AF391
+P 7900 4050
+F 0 "D10" V 7946 3970 50  0000 R CNN
+F 1 "1N4148" V 7855 3970 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 7900 3875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7900 4050 50  0001 C CNN
+	1    7900 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW14
+U 1 1 611AF397
+P 8700 3900
+F 0 "SW14" H 8700 4155 50  0000 C CNN
+F 1 "SW_PUSH" H 8700 4064 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 8700 3900 50  0001 C CNN
+F 3 "" H 8700 3900 50  0000 C CNN
+	1    8700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D14
+U 1 1 611AF39D
+P 9000 4050
+F 0 "D14" V 9046 3970 50  0000 R CNN
+F 1 "1N4148" V 8955 3970 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 9000 3875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9000 4050 50  0001 C CNN
+	1    9000 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW18
+U 1 1 611AF3A3
+P 9800 3900
+F 0 "SW18" H 9800 4155 50  0000 C CNN
+F 1 "SW_PUSH" H 9800 4064 50  0000 C CNN
+F 2 "kbd:CherryMX_MidHeight_Hotswap" H 9800 3900 50  0001 C CNN
+F 3 "" H 9800 3900 50  0000 C CNN
+	1    9800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D18
+U 1 1 611AF3A9
+P 10100 4050
+F 0 "D18" V 10146 3970 50  0000 R CNN
+F 1 "1N4148" V 10055 3970 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 10100 3875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10100 4050 50  0001 C CNN
+	1    10100 4050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:SW_PUSH SW22
+U 1 1 611AF3AF
+P 10900 3900
+F 0 "SW22" H 10900 4155 50  0000 C CNN
+F 1 "SW_PUSH" H 10900 4064 50  0000 C CNN
+F 2 "korpo44:CherryMX_MidHeight_Hotswap_1.25u" H 10900 3900 50  0001 C CNN
+F 3 "" H 10900 3900 50  0000 C CNN
+	1    10900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D22
+U 1 1 611AF3B5
+P 11200 4050
+F 0 "D22" V 11246 3970 50  0000 R CNN
+F 1 "1N4148" V 11155 3970 50  0000 R CNN
+F 2 "kbd:D3_SMD_v2" H 11200 3875 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 11200 4050 50  0001 C CNN
+	1    11200 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3100 5100 2200
+Connection ~ 5100 1400
+Wire Wire Line
+	5100 1400 5100 1000
+Connection ~ 5100 2200
+Wire Wire Line
+	5100 2200 5100 1400
+Wire Wire Line
+	6200 1000 6200 1400
+Connection ~ 6200 1400
+Wire Wire Line
+	6200 1400 6200 2200
+Connection ~ 6200 2200
+Wire Wire Line
+	6200 2200 6200 3100
+Wire Wire Line
+	7300 1000 7300 1400
+Connection ~ 7300 1400
+Wire Wire Line
+	7300 1400 7300 2200
+Connection ~ 7300 2200
+Wire Wire Line
+	7300 2200 7300 3100
+Connection ~ 7300 3100
+Wire Wire Line
+	7300 3100 7300 3900
+Wire Wire Line
+	8400 1000 8400 1400
+Connection ~ 8400 1400
+Wire Wire Line
+	8400 1400 8400 2200
+Connection ~ 8400 2200
+Wire Wire Line
+	8400 2200 8400 3100
+Connection ~ 8400 3100
+Wire Wire Line
+	8400 3100 8400 3900
+Wire Wire Line
+	9500 1000 9500 1400
+Connection ~ 9500 1400
+Wire Wire Line
+	9500 1400 9500 2200
+Connection ~ 9500 2200
+Wire Wire Line
+	9500 2200 9500 3100
+Connection ~ 9500 3100
+Wire Wire Line
+	9500 3100 9500 3900
+Wire Wire Line
+	10600 1000 10600 1400
+Connection ~ 10600 1400
+Wire Wire Line
+	10600 1400 10600 2200
+Connection ~ 10600 2200
+Wire Wire Line
+	10600 2200 10600 3100
+Connection ~ 10600 3100
+Wire Wire Line
+	10600 3100 10600 3900
+Wire Wire Line
+	11200 1700 10100 1700
+Connection ~ 5700 1700
+Wire Wire Line
+	5700 1700 4800 1700
+Connection ~ 6800 1700
+Wire Wire Line
+	6800 1700 5700 1700
+Connection ~ 7900 1700
+Wire Wire Line
+	7900 1700 6800 1700
+Connection ~ 9000 1700
+Wire Wire Line
+	9000 1700 7900 1700
+Connection ~ 10100 1700
+Wire Wire Line
+	10100 1700 9000 1700
+Wire Wire Line
+	4800 2500 5700 2500
+Connection ~ 5700 2500
+Wire Wire Line
+	5700 2500 6800 2500
+Connection ~ 6800 2500
+Wire Wire Line
+	6800 2500 7900 2500
+Connection ~ 7900 2500
+Wire Wire Line
+	7900 2500 9000 2500
+Connection ~ 9000 2500
+Wire Wire Line
+	9000 2500 10100 2500
+Connection ~ 10100 2500
+Wire Wire Line
+	10100 2500 11200 2500
+Wire Wire Line
+	4800 3400 5700 3400
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 3400 6800 3400
+Connection ~ 6800 3400
+Wire Wire Line
+	6800 3400 7900 3400
+Connection ~ 7900 3400
+Wire Wire Line
+	7900 3400 9000 3400
+Connection ~ 9000 3400
+Wire Wire Line
+	9000 3400 10100 3400
+Connection ~ 10100 3400
+Wire Wire Line
+	10100 3400 11200 3400
+Connection ~ 7900 4200
+Wire Wire Line
+	7900 4200 9000 4200
+Connection ~ 9000 4200
+Wire Wire Line
+	9000 4200 10100 4200
+Connection ~ 10100 4200
+Wire Wire Line
+	10100 4200 11200 4200
+Text GLabel 5100 1000 1    50   Input ~ 0
+col0
+Text GLabel 6200 1000 1    50   Input ~ 0
+col1
+Text GLabel 7300 1000 1    50   Input ~ 0
+col2
+Text GLabel 8400 1000 1    50   Input ~ 0
+col3
+Text GLabel 9500 1000 1    50   Input ~ 0
+col4
+Text GLabel 10600 1000 1    50   Input ~ 0
+col5
+Text GLabel 4800 1700 0    50   Input ~ 0
+row0
+Text GLabel 4800 2500 0    50   Input ~ 0
+row1
+Text GLabel 4800 3400 0    50   Input ~ 0
+row2
+Wire Wire Line
+	4800 4200 7900 4200
+Text GLabel 4800 4200 0    50   Input ~ 0
+row3
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED1
+U 1 1 6127DEBD
+P 2150 5550
+F 0 "LED1" H 1900 5450 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 1900 5500 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 2250 5300 50  0001 C CNN
+F 3 "" H 2250 5300 50  0001 C CNN
+	1    2150 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED4
+U 1 1 612812EE
+P 3100 5550
+F 0 "LED4" H 3450 5650 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3750 5600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 3200 5300 50  0001 C CNN
+F 3 "" H 3200 5300 50  0001 C CNN
+	1    3100 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED7
+U 1 1 61288B9C
+P 4100 5550
+F 0 "LED7" H 3850 5450 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3850 5500 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 4200 5300 50  0001 C CNN
+F 3 "" H 4200 5300 50  0001 C CNN
+	1    4100 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED11
+U 1 1 61289F0C
+P 5050 5550
+F 0 "LED11" H 5400 5650 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5700 5600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 5150 5300 50  0001 C CNN
+F 3 "" H 5150 5300 50  0001 C CNN
+	1    5050 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED15
+U 1 1 6128AB83
+P 6000 5550
+F 0 "LED15" H 5750 5450 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5750 5500 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 6100 5300 50  0001 C CNN
+F 3 "" H 6100 5300 50  0001 C CNN
+	1    6000 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED19
+U 1 1 6128B928
+P 6950 5550
+F 0 "LED19" H 7300 5650 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 7600 5600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 7050 5300 50  0001 C CNN
+F 3 "" H 7050 5300 50  0001 C CNN
+	1    6950 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED2
+U 1 1 61295EC9
+P 2150 6600
+F 0 "LED2" H 1850 6500 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 1850 6550 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 2250 6350 50  0001 C CNN
+F 3 "" H 2250 6350 50  0001 C CNN
+	1    2150 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED5
+U 1 1 61295ECF
+P 3100 6600
+F 0 "LED5" H 3450 6700 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3750 6650 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 3200 6350 50  0001 C CNN
+F 3 "" H 3200 6350 50  0001 C CNN
+	1    3100 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED8
+U 1 1 61295ED5
+P 4100 6600
+F 0 "LED8" H 3850 6500 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3850 6550 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 4200 6350 50  0001 C CNN
+F 3 "" H 4200 6350 50  0001 C CNN
+	1    4100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED12
+U 1 1 61295EDB
+P 5050 6600
+F 0 "LED12" H 5400 6700 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5700 6650 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 5150 6350 50  0001 C CNN
+F 3 "" H 5150 6350 50  0001 C CNN
+	1    5050 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED16
+U 1 1 61295EE1
+P 6000 6600
+F 0 "LED16" H 5750 6500 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5750 6550 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 6100 6350 50  0001 C CNN
+F 3 "" H 6100 6350 50  0001 C CNN
+	1    6000 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED20
+U 1 1 61295EE7
+P 6950 6600
+F 0 "LED20" H 7300 6700 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 7600 6650 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 7050 6350 50  0001 C CNN
+F 3 "" H 7050 6350 50  0001 C CNN
+	1    6950 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED3
+U 1 1 6129A31C
+P 2150 7650
+F 0 "LED3" H 1850 7750 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 1850 7700 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 2250 7400 50  0001 C CNN
+F 3 "" H 2250 7400 50  0001 C CNN
+	1    2150 7650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED6
+U 1 1 6129A322
+P 3100 7650
+F 0 "LED6" H 3450 7750 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3750 7700 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 3200 7400 50  0001 C CNN
+F 3 "" H 3200 7400 50  0001 C CNN
+	1    3100 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED9
+U 1 1 6129A328
+P 4100 7650
+F 0 "LED9" H 3850 7550 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3850 7600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 4200 7400 50  0001 C CNN
+F 3 "" H 4200 7400 50  0001 C CNN
+	1    4100 7650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED13
+U 1 1 6129A32E
+P 5050 7650
+F 0 "LED13" H 5400 7750 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5700 7700 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 5150 7400 50  0001 C CNN
+F 3 "" H 5150 7400 50  0001 C CNN
+	1    5050 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED17
+U 1 1 6129A334
+P 6000 7650
+F 0 "LED17" H 5750 7550 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5750 7600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 6100 7400 50  0001 C CNN
+F 3 "" H 6100 7400 50  0001 C CNN
+	1    6000 7650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED21
+U 1 1 6129A33A
+P 6950 7650
+F 0 "LED21" H 7300 7750 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 7600 7700 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 7050 7400 50  0001 C CNN
+F 3 "" H 7050 7400 50  0001 C CNN
+	1    6950 7650
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED10
+U 1 1 6129CFBB
+P 4100 8650
+F 0 "LED10" H 3850 8550 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 3850 8600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 4200 8400 50  0001 C CNN
+F 3 "" H 4200 8400 50  0001 C CNN
+	1    4100 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED14
+U 1 1 6129CFC1
+P 5050 8650
+F 0 "LED14" H 5400 8750 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5700 8700 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 5150 8400 50  0001 C CNN
+F 3 "" H 5150 8400 50  0001 C CNN
+	1    5050 8650
+	0    1    1    0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED18
+U 1 1 6129CFC7
+P 6000 8650
+F 0 "LED18" H 5750 8550 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 5750 8600 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 6100 8400 50  0001 C CNN
+F 3 "" H 6100 8400 50  0001 C CNN
+	1    6000 8650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L foostan_kbd_lib:YS-SK6812MINI-E LED22
+U 1 1 6129CFCD
+P 6950 8650
+F 0 "LED22" H 7300 8750 29  0000 R CNN
+F 1 "YS-SK6812MINI-E" H 7600 8700 29  0000 R CNN
+F 2 "korpo44:YS-SK6812MINI-E-reversible" H 7050 8400 50  0001 C CNN
+F 3 "" H 7050 8400 50  0001 C CNN
+	1    6950 8650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 5250 2150 5150
+Wire Wire Line
+	2150 5150 3100 5150
+Wire Wire Line
+	3100 5150 3100 5250
+Wire Wire Line
+	4100 5250 4100 5150
+Wire Wire Line
+	4100 5150 5050 5150
+Wire Wire Line
+	5050 5150 5050 5250
+Wire Wire Line
+	2800 5550 2600 5550
+Wire Wire Line
+	3400 5550 3650 5550
+Wire Wire Line
+	4400 5550 4550 5550
+Wire Wire Line
+	5350 5550 5550 5550
+Wire Wire Line
+	6300 5550 6500 5550
+Wire Wire Line
+	6650 6600 6500 6600
+Wire Wire Line
+	5700 6600 5550 6600
+Wire Wire Line
+	4750 6600 4550 6600
+Wire Wire Line
+	3800 6600 3650 6600
+Wire Wire Line
+	2800 6600 2600 6600
+Wire Wire Line
+	6650 7650 6500 7650
+Wire Wire Line
+	5700 7650 5550 7650
+Wire Wire Line
+	4750 7650 4550 7650
+Wire Wire Line
+	3800 7650 3650 7650
+Wire Wire Line
+	2800 7650 2600 7650
+Wire Wire Line
+	4400 8650 4550 8650
+Wire Wire Line
+	5350 8650 5550 8650
+Wire Wire Line
+	6950 7950 6950 8350
+Wire Wire Line
+	6000 7950 6000 8350
+Wire Wire Line
+	5050 7950 5050 8350
+Wire Wire Line
+	4100 7950 4100 8350
+Wire Wire Line
+	2150 6900 2150 7350
+Wire Wire Line
+	3100 6900 3100 7350
+Wire Wire Line
+	4100 6900 4100 7350
+Wire Wire Line
+	5050 6900 5050 7350
+Wire Wire Line
+	6000 6900 6000 7350
+Wire Wire Line
+	6950 6900 6950 7350
+Wire Wire Line
+	1750 4950 3650 4950
+Wire Wire Line
+	4550 4950 4550 4650
+Wire Wire Line
+	1850 5550 1750 5550
+Connection ~ 1750 5550
+Wire Wire Line
+	1750 5550 1750 4950
+Wire Wire Line
+	1850 6600 1750 6600
+Connection ~ 1750 6600
+Wire Wire Line
+	1750 6600 1750 5550
+Wire Wire Line
+	1850 7650 1750 7650
+Wire Wire Line
+	1750 7650 1750 6600
+Wire Wire Line
+	3650 8650 3800 8650
+Wire Wire Line
+	3650 8650 3650 7650
+Connection ~ 3650 7650
+Wire Wire Line
+	3650 7650 3400 7650
+Wire Wire Line
+	3650 7650 3650 6600
+Connection ~ 3650 6600
+Wire Wire Line
+	3650 6600 3400 6600
+Wire Wire Line
+	3650 6600 3650 5550
+Connection ~ 3650 5550
+Wire Wire Line
+	3650 5550 3800 5550
+Wire Wire Line
+	3650 5550 3650 4950
+Connection ~ 3650 4950
+Wire Wire Line
+	3650 4950 4550 4950
+Connection ~ 5550 8650
+Wire Wire Line
+	5550 8650 5700 8650
+Wire Wire Line
+	5550 8650 5550 7650
+Connection ~ 5550 7650
+Wire Wire Line
+	5550 7650 5350 7650
+Wire Wire Line
+	5550 7650 5550 6600
+Connection ~ 5550 6600
+Wire Wire Line
+	5550 6600 5350 6600
+Wire Wire Line
+	5550 6600 5550 5550
+Connection ~ 5550 5550
+Wire Wire Line
+	5550 5550 5700 5550
+Connection ~ 4550 4950
+Wire Wire Line
+	6300 8650 6500 8650
+Connection ~ 6500 8650
+Wire Wire Line
+	6500 8650 6650 8650
+Wire Wire Line
+	6500 8650 6500 7650
+Connection ~ 6500 7650
+Wire Wire Line
+	6500 7650 6300 7650
+Wire Wire Line
+	6500 7650 6500 6600
+Connection ~ 6500 6600
+Wire Wire Line
+	6500 6600 6300 6600
+Wire Wire Line
+	6500 6600 6500 5550
+Connection ~ 6500 5550
+Wire Wire Line
+	6500 5550 6650 5550
+Wire Wire Line
+	5550 5550 5550 4950
+Wire Wire Line
+	5550 4950 4550 4950
+Wire Wire Line
+	7250 8650 7400 8650
+Wire Wire Line
+	7400 8650 7400 7650
+Wire Wire Line
+	7250 7650 7400 7650
+Connection ~ 7400 7650
+Wire Wire Line
+	7400 7650 7400 6600
+Wire Wire Line
+	7250 6600 7400 6600
+Connection ~ 7400 6600
+Wire Wire Line
+	7400 6600 7400 5550
+Wire Wire Line
+	7250 5550 7400 5550
+Connection ~ 7400 5550
+Wire Wire Line
+	7400 5550 7400 4950
+Wire Wire Line
+	6950 5850 6950 6300
+Wire Wire Line
+	6000 5850 6000 6300
+Wire Wire Line
+	5050 5850 5050 6300
+Wire Wire Line
+	4100 5850 4100 6300
+Wire Wire Line
+	3100 5850 3100 6300
+Wire Wire Line
+	2600 5550 2600 6600
+Connection ~ 2600 5550
+Wire Wire Line
+	2600 5550 2450 5550
+Connection ~ 2600 6600
+Wire Wire Line
+	2600 6600 2450 6600
+Wire Wire Line
+	2600 6600 2600 7650
+Connection ~ 2600 7650
+Wire Wire Line
+	2600 7650 2450 7650
+Wire Wire Line
+	4550 5550 4550 6600
+Connection ~ 4550 5550
+Wire Wire Line
+	4550 5550 4750 5550
+Connection ~ 4550 6600
+Wire Wire Line
+	4550 6600 4400 6600
+Wire Wire Line
+	4550 6600 4550 7650
+Connection ~ 4550 7650
+Wire Wire Line
+	4550 7650 4400 7650
+Wire Wire Line
+	4550 7650 4550 8650
+Connection ~ 4550 8650
+Wire Wire Line
+	4550 8650 4750 8650
+$Comp
+L power:VCC #PWR09
+U 1 1 61469F6D
+P 4550 4650
+F 0 "#PWR09" H 4550 4500 50  0001 C CNN
+F 1 "VCC" H 4565 4823 50  0000 C CNN
+F 2 "" H 4550 4650 50  0001 C CNN
+F 3 "" H 4550 4650 50  0001 C CNN
+	1    4550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5850 2150 6300
+Wire Wire Line
+	6950 8950 6950 9100
+Wire Wire Line
+	6950 9100 6000 9100
+Wire Wire Line
+	6000 9100 6000 8950
+Wire Wire Line
+	4100 8950 4100 9100
+Wire Wire Line
+	4100 9100 5050 9100
+Wire Wire Line
+	5050 9100 5050 8950
+Wire Wire Line
+	3100 7950 3100 8100
+Wire Wire Line
+	3100 8100 2150 8100
+Wire Wire Line
+	2150 8100 2150 7950
+Wire Wire Line
+	2600 7650 2600 9500
+Wire Wire Line
+	2600 9500 4550 9500
+Wire Wire Line
+	6500 9500 6500 8650
+Wire Wire Line
+	4550 8650 4550 9500
+$Comp
+L power:GND #PWR010
+U 1 1 6150806F
+P 4550 9600
+F 0 "#PWR010" H 4550 9350 50  0001 C CNN
+F 1 "GND" H 4555 9427 50  0000 C CNN
+F 2 "" H 4550 9600 50  0001 C CNN
+F 3 "" H 4550 9600 50  0001 C CNN
+	1    4550 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 9500 6500 9500
+Connection ~ 4550 9500
+Wire Wire Line
+	4550 9500 4550 9600
+Text GLabel 1700 1500 0    50   Input ~ 0
+LED
+Connection ~ 5550 4950
+Wire Wire Line
+	5550 4950 7400 4950
+Wire Wire Line
+	6950 4700 6950 5250
+Text GLabel 6950 4700 1    50   Input ~ 0
+LED
+NoConn ~ 6000 5250
+$EndSCHEMATC

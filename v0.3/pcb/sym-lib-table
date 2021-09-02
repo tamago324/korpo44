@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name foostan_kbd_lib)(type Legacy)(uri ${KIPRJMOD}/foostan/kbd/kicad-symbols/kbd.lib)(options "")(descr ""))
+  (lib (name foostan_kbd_lib)(type Legacy)(uri ${KIPRJMOD}/../footprints/foostan/kbd/kicad-symbols/kbd.lib)(options "")(descr ""))
 )

@@ -1,2 +1,4 @@
 (fp_lib_table
+  (lib (name kbd)(type KiCad)(uri ${KIPRJMOD}/../footprints/foostan/kbd/kicad-footprints/kbd.pretty)(options "")(descr ""))
+  (lib (name korpo44)(type KiCad)(uri ${KIPRJMOD}/../footprints/korpo44.pretty)(options "")(descr ""))
 )
